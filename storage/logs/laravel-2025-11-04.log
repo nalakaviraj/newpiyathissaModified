@@ -1,0 +1,3 @@
+[2025-11-04 11:27:11] local.EMERGENCY: File:/home/u907354579/domains/newpiyathissa.lbmspark.com/public_html/app/Http/Controllers/SellPosController.phpLine:1129Message:Attempt to read property "status" on null  
+[2025-11-04 11:27:13] local.EMERGENCY: File:/home/u907354579/domains/newpiyathissa.lbmspark.com/public_html/app/Http/Controllers/SellPosController.phpLine:1129Message:Attempt to read property "status" on null  
+[2025-11-04 11:27:13] local.EMERGENCY: File:/home/u907354579/domains/newpiyathissa.lbmspark.com/public_html/app/Http/Controllers/SellPosController.phpLine:1129Message:Attempt to read property "status" on null  

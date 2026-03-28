@@ -44,6 +44,25 @@ function pos_is_modal_open() {
     return $('.modal.in:visible').length > 0 || $('.modal.show:visible').length > 0;
 }
 
+// pos-global-spacebar-handler
+$(document).on("keydown", function(e) {
+    if (e.which !== 32) {
+        return;
+    }
+    if (pos_is_modal_open()) {
+        return;
+    }
+    var $target = $(e.target);
+    if ($target.is("input, textarea, select") || $target.is("[contenteditable=\"true\"]")) {
+        return;
+    }
+    if ($("#pos_table tbody tr").length > 0) {
+        e.preventDefault();
+        $("#pos-finalize").first().trigger("click");
+    }
+});
+
+
 function pos_get_suggestion_items() {
     return $('#product_list_body .product_box');
 }

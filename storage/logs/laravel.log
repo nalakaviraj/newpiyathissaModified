@@ -1,0 +1,96 @@
+[2025-06-25 10:50:37] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:210)
+[stacktrace]
+#0 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(135): Illuminate\\Log\\LogManager->resolve()
+#1 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(122): Illuminate\\Log\\LogManager->get()
+#2 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(645): Illuminate\\Log\\LogManager->driver()
+#3 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(274): Illuminate\\Log\\LogManager->error()
+#4 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(481): Illuminate\\Foundation\\Exceptions\\Handler->report()
+#5 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\\Foundation\\Http\\Kernel->reportException()
+#6 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/public/index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle()
+#7 {main}
+"} 
+[2025-06-25 10:50:37] laravel.ERROR: Target class [session] does not exist. {"exception":"[object] (Illuminate\\Contracts\\Container\\BindingResolutionException(code: 0): Target class [session] does not exist. at /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:891)
+[stacktrace]
+#0 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(770): Illuminate\\Container\\Container->build()
+#1 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(856): Illuminate\\Container\\Container->resolve()
+#2 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(706): Illuminate\\Foundation\\Application->resolve()
+#3 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\\Container\\Container->make()
+#4 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(120): Illuminate\\Foundation\\Application->make()
+#5 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(877): app()
+#6 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/config/database.php(19): session()
+#7 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(70): require('/home/u90735457...')
+#8 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles()
+#9 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(242): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap()
+#10 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(176): Illuminate\\Foundation\\Application->bootstrapWith()
+#11 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(160): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#12 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#13 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/public/index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle()
+#14 {main}
+
+[previous exception] [object] (ReflectionException(code: -1): Class \"session\" does not exist at /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:889)
+[stacktrace]
+#0 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(889): ReflectionClass->__construct()
+#1 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(770): Illuminate\\Container\\Container->build()
+#2 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(856): Illuminate\\Container\\Container->resolve()
+#3 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(706): Illuminate\\Foundation\\Application->resolve()
+#4 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\\Container\\Container->make()
+#5 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(120): Illuminate\\Foundation\\Application->make()
+#6 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(877): app()
+#7 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/config/database.php(19): session()
+#8 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(70): require('/home/u90735457...')
+#9 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles()
+#10 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(242): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap()
+#11 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(176): Illuminate\\Foundation\\Application->bootstrapWith()
+#12 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(160): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#13 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#14 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/public/index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle()
+#15 {main}
+"} 
+[2025-06-25 10:50:38] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:210)
+[stacktrace]
+#0 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(135): Illuminate\\Log\\LogManager->resolve()
+#1 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(122): Illuminate\\Log\\LogManager->get()
+#2 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(645): Illuminate\\Log\\LogManager->driver()
+#3 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(274): Illuminate\\Log\\LogManager->error()
+#4 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(481): Illuminate\\Foundation\\Exceptions\\Handler->report()
+#5 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(136): Illuminate\\Foundation\\Http\\Kernel->reportException()
+#6 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/public/index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle()
+#7 {main}
+"} 
+[2025-06-25 10:50:38] laravel.ERROR: Target class [session] does not exist. {"exception":"[object] (Illuminate\\Contracts\\Container\\BindingResolutionException(code: 0): Target class [session] does not exist. at /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:891)
+[stacktrace]
+#0 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(770): Illuminate\\Container\\Container->build()
+#1 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(856): Illuminate\\Container\\Container->resolve()
+#2 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(706): Illuminate\\Foundation\\Application->resolve()
+#3 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\\Container\\Container->make()
+#4 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(120): Illuminate\\Foundation\\Application->make()
+#5 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(877): app()
+#6 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/config/database.php(19): session()
+#7 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(70): require('/home/u90735457...')
+#8 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles()
+#9 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(242): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap()
+#10 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(176): Illuminate\\Foundation\\Application->bootstrapWith()
+#11 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(160): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#12 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#13 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/public/index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle()
+#14 {main}
+
+[previous exception] [object] (ReflectionException(code: -1): Class \"session\" does not exist at /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php:889)
+[stacktrace]
+#0 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(889): ReflectionClass->__construct()
+#1 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(770): Illuminate\\Container\\Container->build()
+#2 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(856): Illuminate\\Container\\Container->resolve()
+#3 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Container/Container.php(706): Illuminate\\Foundation\\Application->resolve()
+#4 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(841): Illuminate\\Container\\Container->make()
+#5 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(120): Illuminate\\Foundation\\Application->make()
+#6 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(877): app()
+#7 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/config/database.php(19): session()
+#8 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(70): require('/home/u90735457...')
+#9 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles()
+#10 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(242): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap()
+#11 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(176): Illuminate\\Foundation\\Application->bootstrapWith()
+#12 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(160): Illuminate\\Foundation\\Http\\Kernel->bootstrap()
+#13 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(134): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter()
+#14 /home/u907354579/domains/southernhardware.lbmspark.com/public_html/public/index.php(51): Illuminate\\Foundation\\Http\\Kernel->handle()
+#15 {main}
+"} 
