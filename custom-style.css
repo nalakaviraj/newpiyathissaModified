@@ -1,0 +1,62 @@
+/* POS keyboard navigation focus styles */
+#product_list_body .product_box {
+    transition: transform 120ms ease, box-shadow 120ms ease, outline 120ms ease;
+}
+
+#product_list_body .product_box.pos-suggestion-active {
+    outline: 5px solid #f97316 !important;
+    outline-offset: 3px;
+    box-shadow: 0 20px 34px rgba(249, 115, 22, 0.35) !important;
+    transform: scale(1.06);
+    z-index: 3;
+}
+
+#product_list_body .product_box.pos-suggestion-zoom {
+    animation: posSuggestionZoom 0.2s ease;
+}
+
+.pos-key-focus {
+    animation: posKeyFocus 0.18s ease;
+}
+
+input.pos-key-focus,
+select.pos-key-focus,
+textarea.pos-key-focus,
+.form-control.pos-key-focus {
+    border-color: #f97316 !important;
+}
+
+body.pos-cart-nav-active #pos_table tbody tr.pos-active-row td {
+    background-color: rgba(249, 115, 22, 0.18) !important;
+    border-top: 3px solid #f97316 !important;
+    border-bottom: 3px solid #f97316 !important;
+}
+
+body.pos-cart-nav-active #pos_table tbody tr.pos-active-row td:first-child {
+    border-left: 3px solid #f97316 !important;
+}
+
+body.pos-cart-nav-active #pos_table tbody tr.pos-active-row td:last-child {
+    border-right: 3px solid #f97316 !important;
+}
+
+@keyframes posSuggestionZoom {
+    0% {
+        transform: scale(1.02);
+    }
+    100% {
+        transform: scale(1.06);
+    }
+}
+
+@keyframes posKeyFocus {
+    0% {
+        box-shadow: 0 0 0 0 rgba(249, 115, 22, 0);
+    }
+    50% {
+        box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.45);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(249, 115, 22, 0);
+    }
+}
